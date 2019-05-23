@@ -32,7 +32,7 @@ Primeramente creamos el vector de las imágenes
 Para la selección de 5 imágenes aleatorios creamos la siguiente función, en la cual debemos crear un nuevo vector en la que se guardaran las nuevas imágenes aleatorias que se generaron, y mediante una alerta informamos al usuario que imágenes se escogieron del arreglo de imágenes 
 <img src="Galeria/Imagenes/aleatorio.png"/>
 
-Podemos observar cuando llegamos al máximo de las imágenes, se desactiva el botón de siguiente 
+Podemos observar cuando llegamos al máximo de las imágenes, se desactiva el botón de siguiente  
 <img src="Galeria/Imagenes/fin.png"/>
 
 
