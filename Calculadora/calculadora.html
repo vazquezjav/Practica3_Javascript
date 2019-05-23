@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link href="estilos.css" rel="stylesheet" />
+		<script type="text/javascript" src="funciones.js"></script>
+	</head>
+<body>
+	<center>
+		<h1>Calculadora basica</h1>
+		
+		<form name="calculadora">
+			<input type="textfield" name="resultado" value="">
+			<br>
+			<input type="reset" value="ce">
+			<input type="button" value="&#8730;" onclick="raiz()">
+			<input type="button" value="1/x" onclick="elevar()">
+			<input type="button" value="x^2" onclick="exponente()">
+
+			 <br>
+			<input type="button" value="1" onclick="document.calculadora.resultado.value+='1'">
+			<input type="button" value="2" onclick="document.calculadora.resultado.value+='2'">
+			<input type="button" value="3" onclick="document.calculadora.resultado.value+='3'">
+			<input type="button" value="+" onclick="document.calculadora.resultado.value+='+'">
+			<br>
+
+			<input type="button" value="4" onclick="document.calculadora.resultado.value+='4'">
+			<input type="button" value="5" onclick="document.calculadora.resultado.value+='5'">
+			<input type="button" value="6" onclick="document.calculadora.resultado.value+='6'">
+			<input type="button" value="-" onclick="document.calculadora.resultado.value+='-'">
+			<br>
+
+			<input type="button" value="7" onclick="document.calculadora.resultado.value+='7'">
+			<input type="button" value="8" onclick="document.calculadora.resultado.value+='8'">
+			<input type="button" value="9" onclick="document.calculadora.resultado.value+='9'">
+			<input type="button" value="*" onclick="document.calculadora.resultado.value+='*'">
+			<br>
+
+			<input type="button" value="0" onclick="document.calculadora.resultado.value+='0'">
+			<input type="button" value="." onclick="document.calculadora.resultado.value+='.'">
+			<input type="button" value="=" onclick="calcula()">
+			<input type="button" value="/" onclick="document.calculadora.resultado.value+='/'">
+			<br>
+
+			
+
+
+	</form>
+
+	</center>
+	
+</body>
+</html>
