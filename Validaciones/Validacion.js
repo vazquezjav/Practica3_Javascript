@@ -108,8 +108,7 @@ function validartelefono(elemento)
     }
     
 }
-
-               
+       
 function validarCorreo(){
     var x = document.getElementById("correo").value
     var correo = x.split("@")
@@ -117,14 +116,61 @@ function validarCorreo(){
     if(x == correo){
     }if((correo[0].length >= 3 ) && (correo[1] == "ups.edu.ec" || correo[1] == "est.ups.edu.ec") )
     {
-        alert("Si cumple")
-        return true
+        alert("Si cumple Correo")
+      
     }
     else
     {
-        alert("No cumple")
-        return false
+        alert("No cumple correo")
     }
     
+}
+
+function validarCedula() {
+   
+    var cad = document.getElementById("cedula").value.trim();
+    var total = 0;
+    var longitud = cad.length;
+    var longcheck = longitud - 1;
+
+    if (cad !== "" && longitud === 10){
+      for(i = 0; i < longcheck; i++){
+        if (i%2 === 0) {
+          var aux = cad.charAt(i) * 2;
+          if (aux > 9) aux -= 9;
+          total += aux;
+        } else {
+          total += parseInt(cad.charAt(i));
+        }
+      }
+
+      total = total % 10 ? 10 - total % 10 : 0;
+
+      if (cad.charAt(longitud-1) == total) {
+          alert("CUmple cedula")
+          return true
+      }else{
+          alert("Nom cumple cedula")
+          return false
+      }
+    }
+  }
+
+
+function CompararFechas()
+{
+	//Comprobamos que tenga formato correcto
+	var Fecha_aux = document.getElementById("fechaNacimiento").value.split("/");
+ 	var Fecha1 = new Date(parseInt(fecha_aux[2]),parseInt(fecha_aux[1]-1),parseInt(fecha_aux[0]));
+ 
+ 	//Comprobamos si existe la fecha
+	if (isNaN(Fecha1)){
+		alert("Fecha introducida incorrecta")
+		return false
+	}
+	else{
+        alert("La fecha que has introducido es "+Fecha1)
+        return true
+	}
 }
 
