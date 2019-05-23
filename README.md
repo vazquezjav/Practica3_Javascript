@@ -26,4 +26,15 @@ Nos informa que nos falta llenar campos
 Inicio de la pagina de las imagenes 
 <img src="Galeria/Imagenes/galeria.png"/>
 
+Primeramente creamos el vector de las imágenes 
+<img src="Galeria/Imagenes/vector.png"/>
+
+Para la selección de 5 imágenes aleatorios creamos la siguiente función, en la cual debemos crear un nuevo vector en la que se guardaran las nuevas imágenes aleatorias que se generaron, y mediante una alerta informamos al usuario que imágenes se escogieron del arreglo de imágenes 
+<img src="Galeria/Imagenes/aleatorio.png"/>
+
+Podemos observar cuando llegamos al máximo de las imágenes, se desactiva el botón de siguiente 
+<img src="Galeria/Imagenes/fin.png"/>
+
+
+
 
